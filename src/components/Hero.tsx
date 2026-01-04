@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion , easeOut} from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Plus, TrendingUp, Package, BarChart3, Sparkles } from "lucide-react";
 import { useProductContext } from "@/Context/ProductContext";
@@ -62,7 +62,7 @@ export function Hero() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut",
+        ease: easeOut,
       },
     },
   };
